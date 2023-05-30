@@ -7,8 +7,8 @@ else:
     from django.utils.translation import gettext_lazy as _
 
 if COOKIEBANNER_IS_WAGTAIL_PROJECT:
-    from wagtail.core.fields import RichTextField
-    from wagtail.admin.edit_handlers import FieldPanel, MultiFieldPanel, HelpPanel
+    from wagtail.fields import RichTextField
+    from wagtail.admin.panels import FieldPanel, MultiFieldPanel, HelpPanel
 
 
 COOKIE_TYPE_CHOICE = (
